@@ -1,0 +1,36 @@
+#
+##file:
+##  staticAccessPath: /images/**
+##  uploadFolder: F:\IdeaProject\houTaiTry\src\main\resources\fileTry\img\goodsimg
+##  staticStorePath: /images/**
+##  storePath: F:\IdeaProject\houTaiTry\src\main\resources\fileTry\img\goodsimg
+##img:
+##  url: http://localhost:8081/images/
+#
+#spring:
+#  mvc:
+#    static-path-pattern: /**
+#  resources:
+#    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public,file:F:\IdeaProject\houTaiTry\src\main\resources\fileTry\img\goodsimg
+
+spring:
+  web:
+    resources:
+      static-locations: classpath:/templates/,classpath:/static/,classpath:/resources
+
+#  spring.datasource.url="jdbc:mysql://localhost:3306/ud"
+#  spring.datasource.data-username="root"
+#  spring.datasource.data-password=123456
+#  spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/ud
+    username: root
+    password: 123456
+    #    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-timeout: 2000
+#  mvc:
+#    static-path-pattern: /goodsimg/**
+
+

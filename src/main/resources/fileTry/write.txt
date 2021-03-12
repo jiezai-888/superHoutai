@@ -1,0 +1,6 @@
+abcde你好！我是输出流（写入）
+public String add(a,b){
+    Integer sum=a+b;
+    String str="a加b的和是："+sum;
+    return str;
+}
